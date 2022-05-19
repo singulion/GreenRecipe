@@ -11,7 +11,6 @@ import com.greenrecipe.main.vo.BuyerVO;
 import com.greenrecipe.main.vo.CartVO;
 import com.greenrecipe.main.vo.CateVO;
 import com.greenrecipe.main.vo.CouponVO;
-import com.greenrecipe.main.vo.DynamoItem;
 import com.greenrecipe.main.vo.GradeVO;
 import com.greenrecipe.main.vo.HashVO;
 import com.greenrecipe.main.vo.HelpVO;
@@ -317,8 +316,8 @@ public interface GreenRecipeService {
 		
 		
 
-		// 2022-04-13
-		void dynamodbUpdate(String itemNum, DynamoItem item) ;
+		// dynamo
+		//void dynamodbUpdate(String itemNum, DynamoItem item) ;
 		
 		
 		

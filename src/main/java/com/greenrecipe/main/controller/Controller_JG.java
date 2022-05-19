@@ -18,7 +18,6 @@ import com.greenrecipe.main.service.GreenRecipeService;
 import com.greenrecipe.main.vo.BuyerVO;
 import com.greenrecipe.main.vo.CartVO;
 import com.greenrecipe.main.vo.CouponVO;
-import com.greenrecipe.main.vo.DynamoItem;
 import com.greenrecipe.main.vo.GradeVO;
 import com.greenrecipe.main.vo.ItemLikeVO;
 import com.greenrecipe.main.vo.ItemVO;
@@ -424,7 +423,7 @@ public String insertPay(@ModelAttribute("BuyerVO") BuyerVO buyerVO, @ModelAttrib
 
 		String paylist = payVO.getPay_itemNum();
 		String[] array = paylist.replace("[", "").replace("]", "").replace(" ", "").split(",");
-		DynamoItem item1 = new DynamoItem();
+		ItemVO item1 = new ItemVO();
 		ItemVO itemvo = new ItemVO();
 		int a = 0;
 		String itemNum = "";

@@ -8,13 +8,8 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.ui.Model;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBSaveExpression;
-import com.amazonaws.services.dynamodbv2.model.AttributeValue;
-import com.amazonaws.services.dynamodbv2.model.ExpectedAttributeValue;
 import com.greenrecipe.main.service.GreenRecipeService;
 import com.greenrecipe.main.service.dao.BuyerDAO;
 import com.greenrecipe.main.service.dao.CartDAO;
@@ -36,7 +31,6 @@ import com.greenrecipe.main.vo.BuyerVO;
 import com.greenrecipe.main.vo.CartVO;
 import com.greenrecipe.main.vo.CateVO;
 import com.greenrecipe.main.vo.CouponVO;
-import com.greenrecipe.main.vo.DynamoItem;
 import com.greenrecipe.main.vo.GradeVO;
 import com.greenrecipe.main.vo.HashVO;
 import com.greenrecipe.main.vo.HelpVO;
@@ -933,7 +927,7 @@ public class GreenRecipeServiceImpl implements GreenRecipeService {
 		
 		
 		
-		
+		/*
 		// AWS
 		
 				 @Autowired
@@ -952,7 +946,7 @@ public class GreenRecipeServiceImpl implements GreenRecipeService {
 				        } 
 				    }
 				
-			 
+ */
 		
 	
 		
